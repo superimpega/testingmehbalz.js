@@ -63,7 +63,7 @@ function f_commands(data) {
 		}
 	}
 	cmds_clean = cmds.slice(0, -2);
-    //API.sendChat('/me Commands currently supported are: /commands, /rules, /cookie, /lock, /unlock, /skip, /retry, rapes super, hugs super, brb, /about, /autoskip, /joke, /test, /reload, /dance');
+    //API.sendChat('/me Commands currently supported are: /commands, /rules, /cookie, /lock, /unlock, /skip, /retry, /rapes super, /hugs super, brb, /about, /autoskip, /joke, /test, /reload, /dance');
 	API.sendChat('/me Commands currently supported are: '+cmds_clean);
 }
 
@@ -218,11 +218,11 @@ var o_chatcmds = {
             f: f_cookie,
             needsPerm: false
         },
-		'rapes super': {
+		'/rapes super': {
             f: f_rape,
             needsPerm: false
         },
-		'hugs super': {
+		'/hugs super': {
             f: f_hug,
             needsPerm: false
         },
