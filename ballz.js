@@ -46,7 +46,7 @@ function join(user)
 
 function leave(user)
 {
-    API.sendChat("Remember to like our page http://gg.gg/SoundGleeFB");
+    API.sendChat("[SB Automessage] Remember to like our page http://gg.gg/SoundGleeFB");
 }
 	
 function f_curate(data)
