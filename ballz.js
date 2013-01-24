@@ -153,7 +153,7 @@ function f_joke(data) {
 }
 function f_test(data) {
 	s = '[AS:  (S: ), AW: '+o_settings.autoWoot+', AQ: '+o_settings.autoQueue+', M: '+b_hasModRights+']';
-	API.sendChat('/me online and functional! '+s);
+	API.sendChat('/me Systems are online and functional! '+s);
 }
 function f_reload(data) {
     API.sendChat('/me bot Reloading!');
@@ -290,7 +290,7 @@ function f_checkChat(data) {
                     API.sendChat('@'+data.from+': Need moderator rights, sorry.');
                     return;
                 }
-                if(API.getUser(data.fromID). || API.getUser(data.fromID).owner) {
+                if(API.getUser(data.fromID).moderator || API.getUser(data.fromID).owner) {
                     o.f(data);
                 } else {
                     API.sendChat('@'+data.from+': Im sorry, but Im afraid I cant let you do that.');
