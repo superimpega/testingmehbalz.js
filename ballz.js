@@ -40,7 +40,7 @@ function f_foxbotInit() { // init foxbot, gets called at the very end
 
 function join(user)
 {
-    API.sendChat("@" + user.username + " Enjoy your stay in the " + Models.room.data.name  + " Have a great time!");
+    API.sendChat("@" + user.username + " Enjoy your stay in the SoundGlee Radio, Have a great time!");
 	//window.setTimeout(function(){f_rule({from: user.username});}, 1000);
 }
 
